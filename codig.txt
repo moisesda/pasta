@@ -1,0 +1,99 @@
+
+algoritmo "proj2"
+// Função :
+// Autor : Moisés
+// Data : 26/02/2024
+// Seção de Declarações 
+var
+      comeco, instrumento : caracter
+      nome, email : caracter
+      sabe_tocar : caracter
+      finalizacao : caracter
+      marca_teclado, marca_bateria, marca_violao, marca_guitarra : caracter
+inicio
+
+      escreval("")
+      escreva ("  Deseja iniciar o programa ? [ S / N ] ")
+      leia (comeco)
+      limpatela
+      escolha comeco
+      repita
+      
+           caso "s"
+           
+              repita
+              escreval("")
+              escreva("   Escreva seu nome : ")
+              leia (nome)
+                   limpatela
+              escreval("")
+              escreva("   Escreva seu email : ")
+              leia (email)
+                   limpatela
+
+
+              escreval("")
+              escreva("  Você sabe tocar algum Instrumento ? [ S / N ] ")
+              leia (sabe_tocar)
+              limpatela
+              escolha sabe_tocar
+
+                      caso "s"
+                      
+                         escreval("")
+                         escreva ("  Você sabe tocar qual instrumento ?  ")
+                         leia (instrumento)
+                         limpatela
+                         escolha instrumento
+
+                                 caso "teclado"
+
+                                 escreval("")
+                                 escreva ("  Qual a marca do teclado ?  ")
+                                 leia(marca_teclado)
+
+                                 caso "bateria"
+
+                                 escreval("")
+                                 escreva ("  Qual a marca do bateria ?  ")
+                                 leia(marca_bateria)
+
+                                 caso "violão"
+
+                                 escreval("")
+                                 escreva ("  Qual a marca do violão ?  ")
+                                 leia(marca_violao)
+
+                                 caso "guitarra"
+
+                                 escreval("")
+                                 escreva ("  Qual a marca do guitarra ?  ")
+                                 leia(marca_guitarra)
+                                 limpatela
+                                 
+                                 fimescolha
+                                 
+                                     escreval ("")
+                                     escreva("         Seus Dados :")
+                                     escreval ("")
+                                     escreval ("")
+                                     escreva("   Nome do Usuario :  ", nome)
+                                     escreval ("")
+                                     escreva("   Email do Usuario :  ", email)
+                                     escreval ("")
+                                     escreval ("")
+                                     escreva("   Sabe tocar algum intrumento :  ", sabe_tocar)
+                                     escreval ("")
+                                     escreva("   Qual instrumento :  ",instrumento)
+                                     escreval ("")
+                                     escreva("   Qual a marca do ",instrumento,(" "),marca_teclado, marca_bateria, marca_violao, marca_guitarra)
+                                     
+                                     escreval ("")
+                                     escreval ("")
+                                     escreva("   Os dados estão certos ? [ S / N ]  ")
+                                     leia (finalizacao)
+
+
+                                     ate finalizacao = "S"
+                                     
+fimalgoritmo
