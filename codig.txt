@@ -1,4 +1,3 @@
-
 algoritmo "proj2"
 // Função :
 // Autor : Moisés
