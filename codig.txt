@@ -2,7 +2,7 @@ algoritmo "proj2"
 // Função :
 // Autor : Moisés
 // Data : 26/02/2024
-// Seção de Declarações 
+// Seção de Declarações
 var
       comeco, instrumento : caracter
       nome, email : caracter
@@ -16,10 +16,11 @@ inicio
       leia (comeco)
       limpatela
       escolha comeco
-      repita
-      
+
+      enquanto (finalizacao <> "s" ) faca
+
            caso "s"
-           
+
               repita
               escreval("")
               escreva("   Escreva seu nome : ")
@@ -38,7 +39,7 @@ inicio
               escolha sabe_tocar
 
                       caso "s"
-                      
+
                          escreval("")
                          escreva ("  Você sabe tocar qual instrumento ?  ")
                          leia (instrumento)
@@ -47,31 +48,37 @@ inicio
 
                                  caso "teclado"
 
-                                 escreval("")
-                                 escreva ("  Qual a marca do teclado ?  ")
-                                 leia(marca_teclado)
+                                      escreval("")
+                                      escreva ("  Qual a marca do teclado ?  ")
+                                      leia(marca_teclado)
 
                                  caso "bateria"
 
-                                 escreval("")
-                                 escreva ("  Qual a marca do bateria ?  ")
-                                 leia(marca_bateria)
+                                      escreval("")
+                                      escreva ("  Qual a marca do bateria ?  ")
+                                      leia(marca_bateria)
 
                                  caso "violão"
 
-                                 escreval("")
-                                 escreva ("  Qual a marca do violão ?  ")
-                                 leia(marca_violao)
+                                      escreval("")
+                                      escreva ("  Qual a marca do violão ?  ")
+                                      leia(marca_violao)
 
                                  caso "guitarra"
 
-                                 escreval("")
-                                 escreva ("  Qual a marca do guitarra ?  ")
-                                 leia(marca_guitarra)
-                                 limpatela
-                                 
+                                      escreval("")
+                                      escreva ("  Qual a marca do guitarra ?  ")
+                                      leia(marca_guitarra)
+
+                                 outrocaso
+
+                                      escreval("")
+                                      escreva ("  Instrumento não esta em nossos dados, tente outro")
+
                                  fimescolha
-                                 
+
+                                     limpatela
+
                                      escreval ("")
                                      escreva("         Seus Dados :")
                                      escreval ("")
@@ -86,13 +93,14 @@ inicio
                                      escreva("   Qual instrumento :  ",instrumento)
                                      escreval ("")
                                      escreva("   Qual a marca do ",instrumento,(" "),marca_teclado, marca_bateria, marca_violao, marca_guitarra)
-                                     
+
                                      escreval ("")
                                      escreval ("")
                                      escreva("   Os dados estão certos ? [ S / N ]  ")
                                      leia (finalizacao)
 
 
-                                     ate finalizacao = "S"
-                                     
+      fimenquanto
+
+
 fimalgoritmo
