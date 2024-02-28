@@ -1,0 +1,20 @@
+algoritmo "Estrutura de repetição"
+// Função : teste de estrutura de repetição
+// Autor : Moisés
+// Data : 28/02/2024
+// Seção de Declarações 
+var
+
+   numero : inteiro
+inicio
+
+numero <- 1
+
+enquanto numero <= 10 faca
+         escreval("")
+         escreval("")
+         escreva (numero:3) // escreve o valor em 3 espaços
+         numero <- numero + 1
+fimenquanto
+
+fimalgoritmo
