@@ -1,0 +1,34 @@
+algoritmo "uvas no cacho"
+// Função :
+// Autor :
+// Data : 28/02/2024
+// Seção de Declarações 
+var
+   UvasNoCacho : caractere
+inicio
+
+escreval("")
+escreva("   Há uvas no cacho ? [ S / N ]  : ")
+leia(UvasNoCacho)
+
+     enquanto (UvasNoCacho <> "N" ) faca
+         escreval("")
+         escreval("   Retire uma uva.")
+         escreval("")
+         escreval("")
+         escreva("   Ainda há uvas no cacho ? [ S / N ]  : ")
+         leia(UvasNoCacho)
+
+     limpatela
+
+     fimenquanto
+     
+     limpatela
+     
+          escreval("")
+          escreval("")
+          escreva("   Não há mais uvas...")
+          escreval("")
+          escreval("")
+          
+fimalgoritmo
