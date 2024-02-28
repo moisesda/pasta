@@ -45,43 +45,44 @@ escolha comeco
                          escreval("")
                          escreva ("  Você sabe tocar qual instrumento ?  ")
                          leia (instrumento)
+
                          limpatela
-                         escolha instrumento
 
-                                 caso "teclado"
+                         escreval("")
+                         escreva ("  Qual a marca do ",instrumento," ? : ")
+                         leia(marca)
 
-                                     escreval("")
-                                     escreva ("  Qual a marca do ",instrumento," ? : ")
-                                     leia(marca)
+                              limpatela
 
-                                     limpatela
+                              escreval ("")
+                              escreval ("")
+                              escreva("         Seus Dados :")
+                              escreval ("")
+                              escreval ("")
+                              escreva("   Nome do Usuario :    -      -     ", nome)
+                              escreval ("")
+                              escreva("   Email do Usuario :   -      -     ", email)
+                              escreval ("")
+                              escreval ("")
+                              escreva("   Sabe tocar algum intrumento :     ", sabe_tocar)
+                              escreval ("")
+                              escreva("   Instrumento :   -     -      -    ",instrumento)
+                              escreval ("")
+                              escreva("   Marca do ",instrumento," ",marca)
 
-                                     escreval ("")
-                                     escreval ("")
-                                     escreva("         Seus Dados :")
-                                     escreval ("")
-                                     escreval ("")
-                                     escreva("   Nome do Usuario :  ", nome)
-                                     escreval ("")
-                                     escreva("   Email do Usuario :  ", email)
-                                     escreval ("")
-                                     escreval ("")
-                                     escreva("   Sabe tocar algum intrumento :  ", sabe_tocar)
-                                     escreval ("")
-                                     escreva("   Instrumento :  ",instrumento)
-                                     escreval ("")
-                                     escreva("   Marca do ",instrumento," ",marca)
+                              escreval ("")
+                              escreval ("")
+                              escreval ("")
+                              escreval ("   Os dados estão certos ? [ Verdadeiro / Falso ]  ")
+                              escreval ("")
+                              escreva("    ")
+                              leia (finalizacao)
+                              limpatela
 
-                                     escreval ("")
-                                     escreval ("")
-                                     escreva("   Os dados estão certos ? [ Verdadeiro / Falso ]  ")
-                                     leia (finalizacao)
-                                     
-                                     fimescolha
-                                     fimescolha
-                                     fimescolha
+                              fimescolha
+                              fimescolha
+                              fimescolha
 
       fimenquanto
-
 
 fimalgoritmo
