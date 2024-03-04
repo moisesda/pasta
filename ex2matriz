@@ -1,0 +1,59 @@
+algoritmo "Ex2Matriz"
+// Função :
+// Autor : Moisés
+// Data : 04/03/2024
+// Seção de Declarações 
+var
+
+   mat : vetor [0..9,0..9] de inteiro
+   n, i, j, cont : inteiro
+
+inicio
+
+      //não tem coluna pra calcular a diagonal pois
+      escreval
+      escreval
+      escreva ("   Qual a ordem da matriz : ")
+      leia(n)
+      
+      para i de 0 ate n-1 faca
+      para j de 0 ate n-1 faca
+      
+      escreva ("   Elemento [", i," /",j ," ] : ")
+      leia (mat[i,j])
+      
+      fimpara
+      fimpara
+
+      limpatela
+      
+      // Ler num diagonal
+      escreval
+      escreval
+      escreval("   Diagonal da matriz digitada : ")
+      escreval
+      para i de 0 ate n-1 faca
+      escreva ("  ",mat[i,i]," ") // não tem coluna por isso consegue ler a diagonal 1x1 2x2 3x3 = diagonal
+      
+
+      fimpara
+      
+      // cont negativos
+      cont <- 0
+      para i de 0 ate n-1 faca
+      para j de 0 ate n-1 faca
+      
+      se mat[i,j] <0 entao
+         cont <- cont + 1
+         
+      fimse
+      fimpara
+      fimpara
+      
+      escreval
+      escreval
+      escreval ("   Quantidade de negativos : ",cont)
+      escreval
+      
+
+fimalgoritmo
