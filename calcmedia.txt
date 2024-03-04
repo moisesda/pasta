@@ -1,0 +1,87 @@
+algoritmo "jogoTabuada"
+// Função : exibir uma multiplicação na tela e o usuario devera responder
+// Autor : Moisés
+// Data : 01/03/2024
+// Seção de Declarações
+
+var
+
+   num1 : vetor [1..10] de inteiro
+   num2 : vetor [1..10] de inteiro
+   resposta : vetor [1..10] de real
+   RespCerta : vetor [1..10] de real
+   i : inteiro
+   start : caracter
+   loop : caracter
+   pontuacao : inteiro
+
+
+inicio
+	repita
+    para i de 1 ate 3 faca
+
+    aleatorio 0,100
+    leia(num1[i])
+    leia(num2[i])
+
+    limpatela
+    aleatorio off
+    fimpara
+
+    escreval("")
+    escreval("")
+    escreval("   +  -  x  /  Joguinho de tabuada  /  x  -  + ")
+    escreval("")
+    escreval("")
+    escreval("   Deseja iniciar o programa [ S / N ]")
+    escreval("")
+    escreva ("   ")
+    leia (start)
+    escolha start
+
+    caso "s"
+
+        limpatela
+        escreval("")
+        escreval("")
+        escreval("   +  -  x  /  Joguinho de tabuada  /  x  -  + ")
+        escreval("")
+        escreval("")
+
+        para i de 1 ate 10 faca
+
+        escreval("")
+        escreval("                                                               pontos : ",pontuacao)
+        escreva ("   ",i,") Quanto é ",num1[i]," X ",num2[i]," = ")
+        leia (resposta[i])
+
+        RespCerta <- num1[i] * num2[i]
+
+        escolha resposta[i]
+
+                caso resposta[i] = RespCerta
+
+                pontuacao <- pontuacao + 100
+
+        fimescolha
+        limpatela
+        fimpara
+		
+        escreval("")
+        escreval("")
+        escreval("   +  -  x  /  Joguinho de tabuada  /  x  -  + ")
+        escreval("")
+        escreval("")
+		escreval("	 Sua pontuação total foi : ",pontuacao,)
+		escreval("")
+		escreval("")
+		escreval("")
+		escreval("	 Deseja refazer o jogo [ S / N ]") 
+		escreva("   ")
+		leia(loop)
+		
+	ate finalizacao = "S"
+		
+    fimescolha
+
+fimalgoritmo
