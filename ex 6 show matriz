@@ -1,0 +1,35 @@
+Algoritmo "ex6show"
+Var
+
+i, j : inteiro
+coluna, linha : inteiro
+mat : vetor [0..2,0..2] de inteiro
+
+Inicio
+
+
+coluna <- 3
+linha <- 3
+
+para i de 0 ate coluna-1 faca
+para j de 0 ate linha-1 faca
+
+   escreva ("   Valor par posição [", i," /",j ," ] : ")
+   leia (mat[i,j])
+
+fimpara
+fimpara
+
+//exibe sómente uma linha da matriz por vez
+para i de 0 ate linha-1 faca
+para j de 0 ate linha-1 faca
+
+      escreva("[",mat[i,j]," ]")
+
+   fimpara
+   
+   escreval
+
+fimpara
+
+Fimalgoritmo
