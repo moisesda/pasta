@@ -1,0 +1,48 @@
+Algoritmo "ex8find"
+Var
+
+coluna, linha : inteiro
+i, j : inteiro
+x : logico
+search : inteiro
+mat : vetor [0..2,0..3] de inteiro
+Inicio
+
+coluna <- 3
+linha <- 4
+x <- falso
+//exibe para o user escrever os numeros dentros na matriz
+para i de 0 ate coluna-1 faca
+para j de 0 ate linha-1 faca
+
+   escreva ("   Valor da posição [", i," /",j ," ] : ")
+   leia (mat[i,j])
+
+fimpara
+fimpara
+
+//reveber um novo valor e verificar se esta na matriz
+escreva("   Digite um valor para ser buscado na matriz : ")
+leia (search)
+
+para i de 0 ate linha-1 faca
+para j de 0 ate linha-1 faca
+
+  se (mat[i,j] = search) entao
+     x <- verdadeiro
+     
+fimse
+     
+fimpara
+fimpara
+
+//exibir se o novo valor esta ou não na matriz
+
+   se x = true faca
+   
+      escreva("   O valor ",serach," está na matriz")
+
+   senao
+      escreva("   O valor ",search," não esta na matriz")
+fimse
+Fimalgoritmo
