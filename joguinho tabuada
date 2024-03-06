@@ -1,0 +1,31 @@
+algoritmo "gametab"
+// Função : um jogo que acumula pontuação a cada questão matematica
+// Autor : moisés
+// Data : 06/03/2024
+// Seção de Declarações 
+var
+
+iniciar : caracter
+
+inicio
+
+// perguntar se deseja inicializar o programa
+
+escreval
+escreval
+escreva ("   Deseja iniciar o programa : [ S / N ] ")
+leia (iniciar)
+escolha iniciar
+
+        caso "sim" ou "s"
+        escreva ("oie")
+        
+fimse
+
+// adicionar o nome para calcular a pontuação
+// gerar os numeros aleatoriamente
+// usar os numeros aleatorios para fazer as questões
+// contar a pontuação por acerto de cada questão
+
+
+fimalgoritmo
