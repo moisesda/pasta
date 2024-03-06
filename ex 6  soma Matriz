@@ -1,0 +1,45 @@
+Algoritmo "ex6somMatriz"
+
+Var
+
+  i, j : inteiro
+  linha, coluna : inteiro
+  mat : vetor [0..2,0..2] de real
+  soma : real
+
+Inicio
+
+  // ler uma matriz 3x3
+  linha <- 3
+  coluna <- 3
+  
+  escreval
+  
+  para i de 0 ate coluna-1 faca
+  para j de 0 ate linha-1 faca
+  
+     escreva ("   Valor par posição [", i," /",j ," ] : ")
+     leia (mat[i,j])
+  
+  fimpara
+  fimpara
+  
+  escreval
+  
+  // mostrar a soma dos elementos de cada linha
+  para i de 0 ate linha-1 faca
+  para j de 0 ate linha-1 faca
+  
+     soma <- mat[i,0]
+     escreva("[",mat[i,j]," ]")
+     
+     soma <- soma + mat[i,j]
+  
+  fimpara
+  
+  escreva("  Soma dessa Linha =",soma)
+  escreval
+  
+  fimpara
+
+Fimalgoritmo
