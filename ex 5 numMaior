@@ -1,0 +1,47 @@
+Algoritmo "ex5cadaLinha"
+
+
+Var
+
+linha : inteiro
+i, j : inteiro
+mat : vetor [0..9,0..9] de inteiro
+x : inteiro
+
+Inicio
+
+escreva("   Escreva ordem da matriz ? : ")
+leia(linha)
+
+escreval
+
+// exibi e guarda cada numero digitado dentro da matriz
+para i de 0 ate linha-1 faca
+para j de 0 ate linha-1 faca
+
+   escreva ("   Elemento [", i," /",j ," ] : ")
+   leia (mat[i,j])
+
+fimpara
+fimpara
+
+escreval
+
+// calc maior o maior elemento de cada linha de uma matriz
+escreval("    Maior elemento de cada linha : ")
+para i de 0 ate linha-1 faca
+
+   x <- mat[i,0]
+   para j de 0 ate linha-1 faca
+   
+      se mat[i,j] > x entao
+         x <- mat [i,j]
+      fimse
+      
+   fimpara
+
+escreva(" (",x," )")
+
+fimpara
+
+Fimalgoritmo
