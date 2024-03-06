@@ -1,17 +1,15 @@
-algoritmo "semnome"
-// Função :
-// Autor :
+algoritmo "Ex4negativos"
+// Função : / ler doi numeros de m e n max 10 e depois ler matriz mxn den um inteiro, conforme ex: em seguida mostrar somente os numeros negativos da matriz
+// Autor : Moisés
 // Data : 06/03/2024
-// Seção de Declarações 
+// Seção de Declarações
 var
 
 linha, coluna : inteiro
 i, j : inteiro
-mat : vetor [0..9,0..9] de inteiro
-numNegativo : vetor [0..9,0..9] de inteiro
+mat : vetor [0..2,0..2] de inteiro
 
 inicio
-// ler doi numeros de m e n max 10 e depois ler matriz mxn den um inteiro, conforme ex: em seguida mostrar somente os numeros negativos da matriz
 
 escreva("   Qual a quantidade de linhas da matriz ? : ")
 leia (linha)
@@ -28,19 +26,18 @@ para j de 0 ate linha-1 faca
 fimpara
 fimpara
 
+escreval
+escreva ("   Numeros negativos da matriz : ")
 para i de 0 ate coluna-1 faca
 para j de 0 ate linha-1 faca
 
    se mat[i,j] <0 entao
-   numNegativo <- numNegativo + i,j
-   
+      escreva(mat[i,j])
+      escreva(" / ")
+      
    fimse
-
+      
 fimpara
 fimpara
-
-escreval
-escreva(numNegativo)
-
 
 fimalgoritmo
