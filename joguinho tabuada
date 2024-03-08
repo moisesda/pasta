@@ -1,31 +1,57 @@
-algoritmo "gametab"
-// Função : um jogo que acumula pontuação a cada questão matematica
-// Autor : moisés
-// Data : 06/03/2024
-// Seção de Declarações 
+algoritmo "jogo_tabuada"
 var
 
-iniciar : caracter
+start : caracter
+
+
+procedimento game (qntd : caracter)
+var
+
+i : inteiro
+score : inteiro
+
+resposta :vetor [1..10] de real
+right : vetor [1..10] de real
+num1 : vetor [1..10] de inteiro
+num2 : vetor [1..10] de inteiro
 
 inicio
 
-// perguntar se deseja inicializar o programa
-
-escreval
-escreval
-escreva ("   Deseja iniciar o programa : [ S / N ] ")
-leia (iniciar)
-escolha iniciar
-
-        caso "sim" ou "s"
-        escreva ("oie")
-        
-fimse
-
-// adicionar o nome para calcular a pontuação
 // gerar os numeros aleatoriamente
-// usar os numeros aleatorios para fazer as questões
-// contar a pontuação por acerto de cada questão
+para i de 1 ate 10 faca
 
+   num1[i] <- randi(10) + 1
+   num2[i] <- randi(10) + 1
+
+fimpara
+
+escreval
+
+para i de 1 ate 10 faca
+limpatela
+
+   escreval("   Deseja iniciar o programa ? [ S / N ] : ",start)
+   escreval
+   escreval("                                         pontuação =",score)
+   escreval
+   escreva("  ",i,")",num1[i]," x",num2[i]," = ")
+   leia (resposta[i])
+   
+   right[i] <- num1[i] * num2[i]
+   
+   se right[i] = resposta[i] entao
+      score <- score + 1
+   
+   fimse
+fimpara
+
+fimprocedimento
+
+inicio
+
+escreva("   Deseja iniciar o programa ? [ S / N ] : ")
+leia (start)
+limpatela
+game(start)
 
 fimalgoritmo
