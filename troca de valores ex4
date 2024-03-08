@@ -1,0 +1,29 @@
+algoritmo "Troca de valores"
+var
+
+x, y : inteiro
+
+procedimento troca (var a, b : inteiro)
+var
+
+aux : inteiro
+
+inicio
+
+aux <- a
+a <- b
+b <- aux
+
+fimprocedimento
+
+inicio
+
+x <- 78
+y <- 40
+
+escreval(" Os valores de 'x' e 'y' antes da troca são : x =",x," / y =",y)
+troca(x,y)
+escreval(" Os valores de 'x' e 'y' depois da troca são : x =",x," / y =",y)
+
+
+fimalgoritmo
