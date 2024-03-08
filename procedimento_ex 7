@@ -1,0 +1,41 @@
+Algoritmo "procedimento ex 7"
+
+var
+
+num : vetor [1..10] de inteiro
+cont : inteiro
+
+procedimento ImprimirVetor(ordem:caracter)
+var
+
+i : inteiro
+
+inicio
+
+se (ordem = "C") entao
+   para i de 10 ate 1 passo -1 faca
+   escreval(num[i])
+   
+   fimpara
+senao
+   se (ordem = "I") entao
+      para i de 10 ate 1 passo -1 faca
+      escreva(num[i])
+      fimpara
+      
+   fimse
+fimse
+
+fimprocedimento
+
+inicio
+
+para cont de 1 ate 10 faca
+   num[cont] <- cont
+   
+fimpara
+
+imprimirVetor("I")
+imprimirVetor("C")
+
+fimalgoritmo
