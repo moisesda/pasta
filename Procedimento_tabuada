@@ -1,0 +1,25 @@
+Algoritmo "Pocedimento_tabuada"
+var
+num : inteiro
+
+procedimento Tabuada(valor : inteiro)
+Var
+
+i : inteiro
+
+inicio
+   escreval("Tabuada de :",valor)
+
+   para i de 1 ate 10 faca
+      escreval(valor," x",i," =",valor*i)
+   fimpara
+   
+fimprocedimento
+
+Inicio
+
+escreva("Digite um número: ")
+leia(num)
+Tabuada(num)
+
+fimalgoritmo
