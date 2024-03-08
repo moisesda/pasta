@@ -1,0 +1,45 @@
+algoritmo "procedimento_ex4"
+var
+
+n : inteiro
+
+procedimento exibir (qntd : inteiro)
+var
+
+i : inteiro
+j : inteiro
+
+
+inicio
+
+para i de 0 ate n faca
+para j de 0 ate n faca
+
+   se (i = j) entao
+      escreva(j)
+   senao
+      se (i = 1) ou (i = n) entao
+         escreva(" *")
+      senao
+         se (j = 1) ou (j = n) entao
+             escreva(" *")
+         senao
+             escreva (" *")
+         fimse
+      fimse
+    fimse
+
+
+fimpara
+escreval
+fimpara
+
+fimprocedimento
+
+inicio
+
+escreva("Digite a quantidade de * que havera : ")
+leia (n)
+exibir(n)
+
+fimalgoritmo
