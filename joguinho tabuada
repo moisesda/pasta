@@ -20,8 +20,8 @@ inicio
 // gerar os numeros aleatoriamente
 para i de 1 ate 10 faca
 
-   num1[i] <- randi(10) + 1
-   num2[i] <- randi(10) + 1
+   num1[i] <- randi(120) - 100
+   num2[i] <- randi(120) - 100
 
 fimpara
 
@@ -36,13 +36,25 @@ limpatela
    escreval
    escreva("  ",i,")",num1[i]," x",num2[i]," = ")
    leia (resposta[i])
-   
+
    right[i] <- num1[i] * num2[i]
-   
+
    se right[i] = resposta[i] entao
       score <- score + 1
-   
+
    fimse
+fimpara
+
+limpatela
+
+escreval
+escreval("    Comparação entre os resultados : ")
+escreval
+escreval("    Sua Resposta :                     Resposta certa : ")
+escreval
+
+para i de 1 ate 10 faca
+   escreval("  ",i,")",num1[i]," x",num2[i]," = ",resposta[i],"                ",i,")",num1[i]," x",num2[i]," = ",right[i])
 fimpara
 
 fimprocedimento
