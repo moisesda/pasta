@@ -14,9 +14,12 @@ resposta :vetor [1..10] de real
 right : vetor [1..10] de real
 num1 : vetor [1..10] de inteiro
 num2 : vetor [1..10] de inteiro
+nomes : vetor [1..10] de caracter
+pontuacao : vetor [1..10] de inteiro
 
 inicio
-
+// laco de repetição, do inicio até o fim do prog que pergunta o nome
+// se quiser encerrar
 // gerar os numeros aleatoriamente
 para i de 1 ate 10 faca
 
