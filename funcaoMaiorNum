@@ -1,0 +1,47 @@
+Algoritmo "semnome"
+
+Var
+n1, n2, maior, igual, m : inteiro
+
+funcao max ( x,y : inteiro) : inteiro
+
+   inicio
+   
+      maior <- x, y
+      
+      se n1 > n2 entao
+         maior <- n1
+         
+      senao
+         maior <- n2
+         
+      se n1 = n2 entao
+         maior <- n1, n2
+         
+      retorne maior
+      
+      fimse
+      fimse
+      
+fimfuncao
+
+Inicio
+
+escreval("Programa para comparar os números")
+
+escreva("Digite um número para saber qual é o maior : ")
+leia(n1)
+
+escreva("Digite outro número para saber qual é o maior : ")
+leia(n2)
+
+m <- max(n1,n2)
+
+escreval("O maior número é : ",maior)
+
+se (n1=n2) entao
+  screval("Os números são iguais")
+  
+fimse
+
+Fimalgoritmo
