@@ -2,7 +2,7 @@ algoritmo "jogo_tabuada"
 var
 
 start : caracter
-
+fim : caracter
 
 procedimento game (qntd : caracter)
 var
@@ -60,13 +60,29 @@ para i de 1 ate 10 faca
    escreval("  ",i,")",num1[i]," x",num2[i]," = ",resposta[i],"                ",i,")",num1[i]," x",num2[i]," = ",right[i])
 fimpara
 
+escreva("Deseja finalizar o programa ? [ S / N ] : ")
+leia (fim)
+
 fimprocedimento
 
 inicio
 
+fim <- "n"
+
 escreva("   Deseja iniciar o programa ? [ S / N ] : ")
 leia (start)
 limpatela
-game(start)
+
+se start = "s" entao
+
+   se fim = "n" entao
+   
+      game(start)
+      
+   senao
+senao
+
+fimse
+fimse
 
 fimalgoritmo
