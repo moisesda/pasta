@@ -1,0 +1,21 @@
+algoritmo "Ex_2_areaTriangulo"
+// Função : pedir as dimenções e calcular a area de um triagulo
+// Autor : Moisés
+// Data : 13/03/2024
+// Seção de Declarações 
+var
+
+a, b, Area : real
+
+inicio
+
+escreva("Digite a dimenção da base : ")
+leia(b)
+escreval
+escreva("Digite a dimenção da altura : ")
+leia(a)
+escreval
+Area <- (b * a)/ 2
+escreva("A área do triangulo é de :",Area)
+
+fimalgoritmo
