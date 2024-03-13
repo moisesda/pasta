@@ -1,0 +1,26 @@
+algoritmo "Ex_3 dias"
+// Função : pedir a data de nasci e calcular a quantidade de dias vividos
+// Autor : Moisés
+// Data : 13/03/2024
+// Seção de Declarações 
+var
+
+dia, mes, ano : inteiro
+calc_ano, calc_mes, calc_dia : inteiro
+
+inicio
+
+escreva("Digite o dia em que nasceu : ")
+leia(dia)
+escreva("Digite o mes em que nasceu : ")
+leia(mes)
+escreva("Digite o ano em que nasceu : ")
+leia(ano)
+
+calc_ano <- (2017 - ano) * 365
+calc_mes <- (mes * 30) - (30 - dia)
+calc_dia <- calc_ano + calc_mes
+
+escreva("Você possui ", calc_dia," dias de vivida")
+
+fimalgoritmo
