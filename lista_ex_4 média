@@ -1,0 +1,30 @@
+algoritmo "Ex_4 notas"
+// Função : pedir 3 notas de 15 alunos, calc a média ponderada
+// Autor : Moisés
+// Data : 13/03/2024
+// Seção de Declarações 
+var
+
+i, n1, n2, n3 : inteiro
+mp : vetor [1..15] de real
+
+inicio
+
+para i de 1 ate 15 faca
+   escreva("Digite a primeira nota do",i,") aluno : ")
+   leia(n1)
+   
+   escreva("Digite a segunda nota do",i,") aluno : ")
+   leia(n1)
+
+   escreva("Digite a terceira nota do",i,") aluno : ")
+   leia(n1)
+   
+   mp[i] <- (n1*2 + n2*4 + n3 * 3)/ 10
+fimpara
+para i de 1 ate 15 faca
+
+   escreval("A média do : ",i,"° Aluno é :",mp[i])
+
+fimpara
+fimalgoritmo
